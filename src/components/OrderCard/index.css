@@ -1,0 +1,88 @@
+.order-card {
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #171f46;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.order-card p {
+  margin: 4px 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 8px;
+  width: 160px;
+}
+
+.item-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+  list-style-type: none;
+  margin: 12px 0;
+}
+
+.status-update-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.status-update-section select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #64748b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.update-button,
+.delete-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid #171f46;
+  background-color: transparent;
+  color: #171f46;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background-color: #171f46;
+  color: white;
+}
+
+.order-buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}

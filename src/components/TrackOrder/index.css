@@ -1,0 +1,141 @@
+.track-order-container {
+  padding: 20px;
+}
+
+.track-your-order{
+  font-family: 'Roboto';
+  color: #3e4c59;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.track-order-card {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0px 4px 16px 0px #eaebed;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.item-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.item-details p {
+  margin: 2px 0;
+}
+
+/* Timeline Section */
+.timeline-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.timeline-status {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #2e3a59;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #c0c0c0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  z-index: 1;
+}
+
+.timeline-step.done .circle,
+.timeline-step.current .circle {
+  background-color: #0b84f3;
+  border-color: #0b84f3;
+  color: white;
+}
+
+.timeline-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 4px;
+  width: 100%;
+  background-color: #c0c0c0;
+  z-index: 0;
+}
+
+.timeline-step.done:not(:last-child)::after {
+  background-color: #0b84f3;
+}
+
+.timeline-step p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.active-status {
+  font-weight: bold;
+  color: #0b84f3;
+}
+.order-id{
+  font-family: 'Roboto';
+  color: #1e1919;
+  font-size: 16px;
+}
+.details-heading{
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  color: #3e4c59;
+}
+
+.buyer-details{
+  font-family: 'Roboto';
+  color: #3e4c59;
+  font-size: 16px;
+}
+
+.sub{
+  font-weight: 500;
+}
+.items-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}

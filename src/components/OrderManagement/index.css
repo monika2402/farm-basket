@@ -1,0 +1,30 @@
+.tab-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.tab-bar button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-bar .active-tab {
+  background-color: #2563eb;
+  color: white;
+}
+
+.order-column-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.order-management-container {
+  padding: 20px;
+}

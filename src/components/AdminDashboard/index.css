@@ -1,0 +1,46 @@
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.tabs button {
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tabs button:hover {
+  background-color: #f0f0f0;
+}
+
+.tabs .active {
+  background-color: #0967d2;
+  color: white;
+  border-color: #0967d2;
+  box-shadow: 0 6px 10px rgba(76, 175, 80, 0.2);
+}
+
+.tab-content {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
