@@ -80,7 +80,7 @@ class ProductCatalogue extends Component {
       searchInput,
       activeRatingId,
     } = this.state
-    const apiUrl = `http://localhost:5000/api/products?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`
+    const apiUrl = `https://bulk-ordering-app-backend.vercel.app/api/products?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,

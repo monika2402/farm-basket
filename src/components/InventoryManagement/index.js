@@ -63,7 +63,7 @@ class InventoryManagement extends Component {
   deleteProduct = async (id) => {
     try {
       const jwtToken = Cookies.get('jwt_token');
-      const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const response = await fetch(`https://bulk-ordering-app-backend.vercel.app/api/products/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${jwtToken}`,

@@ -36,7 +36,7 @@ class AddProductModal extends Component {
 
     try {
       const jwtToken = Cookies.get('jwt_token'); // Use Cookies to get the JWT token
-      const response = await fetch('http://localhost:5000/api/products', {
+      const response = await fetch('https://bulk-ordering-app-backend.vercel.app/api/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -59,7 +59,7 @@ class ProductItemDetails extends Component {
 
     this.setState({apiStatus: apiStatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = `http://localhost:5000/api/products/${id}`
+    const apiUrl = `https://bulk-ordering-app-backend.vercel.app/api/products/${id}`
     const options = {
       headers: {Authorization: `Bearer ${jwtToken}`},
       method: 'GET',

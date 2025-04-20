@@ -92,7 +92,7 @@ class OrderManagement extends Component {
     const newStatus = this.state.statusUpdates[orderId];
     try {
       const jwtToken = Cookies.get('jwt_token');
-      const response = await fetch(`http://localhost:5000/api/orders/${orderId}/status`, {
+      const response = await fetch(`https://bulk-ordering-app-backend.vercel.app/api/orders/${orderId}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
