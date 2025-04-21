@@ -26,7 +26,7 @@ class TrackOrder extends Component {
 
     try {
       const token = Cookies.get('jwt_token');
-      const response = await fetch(`https://bulk-ordering-app-backend.vercel.app/api/orders/user/${userId}`, {
+      const response = await fetch(`https://bulk-ordering-app-backend.onrender.com/api/orders/user/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

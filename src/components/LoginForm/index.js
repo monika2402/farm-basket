@@ -38,7 +38,7 @@ class LoginForm extends Component {
     e.preventDefault()
     const { username, password, isAdmin } = this.state
 
-    const resp = await fetch('https://bulk-ordering-app-backend.vercel.app/api/auth/login', {
+    const resp = await fetch('https://bulk-ordering-app-backend.onrender.com/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password, isAdmin }),

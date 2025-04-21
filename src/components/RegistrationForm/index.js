@@ -26,7 +26,7 @@ class RegisterForm extends Component {
     e.preventDefault()
     const { username, password, isAdmin } = this.state
 
-    const response = await fetch('https://bulk-ordering-app-backend.vercel.app/api/auth/register', {
+    const response = await fetch('https://bulk-ordering-app-backend.onrender.com/api/auth/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password, isAdmin }),

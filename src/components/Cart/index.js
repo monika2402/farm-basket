@@ -51,7 +51,7 @@ class Cart extends Component {
       })),
     }
 
-    const response = await fetch('https://bulk-ordering-app-backend.vercel.app/api/orders', {
+    const response = await fetch('https://bulk-ordering-app-backend.onrender.com/api/orders', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
