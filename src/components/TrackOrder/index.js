@@ -30,7 +30,6 @@ class TrackOrder extends Component {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-        credentials: 'include',
       });
       if (response.ok) {
         const data = await response.json();

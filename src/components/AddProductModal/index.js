@@ -54,7 +54,6 @@ class AddProductModal extends Component {
           quantity: parseInt(quantity), // Ensure quantity is an integer
           total_reviews: totalReviews, // Ensure totalReviews is passed
         }),
-        credentials: 'include',
       });
 
       if (!response.ok) {

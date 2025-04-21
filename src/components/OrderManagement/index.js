@@ -99,7 +99,6 @@ class OrderManagement extends Component {
           Authorization: `Bearer ${jwtToken}`,
         },
         body: JSON.stringify({ status: newStatus }),
-        credentials: 'include',
       });
 
       if (!response.ok) {

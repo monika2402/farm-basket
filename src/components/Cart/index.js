@@ -58,7 +58,6 @@ class Cart extends Component {
         'Authorization': `Bearer ${Cookies.get('jwt_token')}`,
       },
       body: JSON.stringify(payload),
-      credentials: 'include',
     })
 
     if (response.ok) {

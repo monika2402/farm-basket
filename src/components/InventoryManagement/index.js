@@ -68,7 +68,6 @@ class InventoryManagement extends Component {
         headers: {
           Authorization: `Bearer ${jwtToken}`,
         },
-        credentials: 'include',
       });
 
       if (!response.ok) {

@@ -49,7 +49,6 @@ class EditProductModal extends Component {
           quantity: parseInt(quantity), // Ensuring integer format
           rating: parseFloat(rating), // Ensuring numeric format
         }),
-        credentials: 'include',
       });
 
       if (!response.ok) {
