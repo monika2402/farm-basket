@@ -63,6 +63,7 @@ class ProductItemDetails extends Component {
     const options = {
       headers: {Authorization: `Bearer ${jwtToken}`},
       method: 'GET',
+      credentials: 'include',
     }
     const response = await fetch(apiUrl, options)
     if (response.ok) {

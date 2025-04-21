@@ -30,6 +30,7 @@ class RegisterForm extends Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password, isAdmin }),
+      credentials: 'include',
     })
 
     const data = await response.json()
