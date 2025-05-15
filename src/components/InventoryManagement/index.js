@@ -25,7 +25,7 @@ class InventoryManagement extends Component {
   fetchProducts = async () => {
     try {
       const jwtToken = Cookies.get('jwt_token');
-      const response = await fetch('http://localhost:5000/api/products', {
+      const response = await fetch('https://bulk-ordering-app-backend.onrender.com/api/products', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${jwtToken}`,
